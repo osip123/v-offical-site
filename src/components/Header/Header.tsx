@@ -1,23 +1,23 @@
-import React from 'react'
+import { LinksDat } from './LinkDat'
+import { Link } from 'react-router-dom'
+import './Header.scss'
 
 const Header = () => {
   return (
     <header>
-        <div className="lihe__1">
+        <div className="line__1">
             <div className="logo">
-                V
+                <a href='#'>V</a>
             </div>
             <div className="User">
-                Osip M
+                <Link to='/profile'>Osip M</Link>
             </div>
         </div>
         <div className="line__2">
             <nav>
-                <a href="">nav</a>
-                <a href="">nav</a>
-                <a href="">nav</a>
-                <a href="">nav</a>
-                <a href="">nav</a>
+                {LinksDat.map((item) => (
+                    <Link key={item.path} to={item.path}>{item.title}</Link>
+                ))}
             </nav>
         </div>
     </header>
