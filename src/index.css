@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all .5s ease-in-out;
+}
+
+:is(a, span, li, ol, h1, h2, h3, h4, h5){
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 400;
+  outline: none;
 }
 
 body, html{

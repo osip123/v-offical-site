@@ -10,11 +10,7 @@ export const LinksDat = [
     {
         path: '/progects',
         title: 'Progects'
-    },    
-    {
-        path: '/pricing',
-        title: 'Pricing'
-    },  
+    },      
     {
         path: '/pricing',
         title: 'Pricing'
